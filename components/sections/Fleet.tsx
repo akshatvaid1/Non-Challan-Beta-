@@ -40,7 +40,6 @@ export default function Fleet({ isLoading = false }: FleetProps) {
                 <ScooterCard
                   key={scooter.id}
                   name={scooter.name}
-                  price={scooter.price}
                   image={scooter.image}
                 />
               ))}

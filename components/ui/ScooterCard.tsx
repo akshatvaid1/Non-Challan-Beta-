@@ -2,11 +2,10 @@ import Image from 'next/image';
 
 interface ScooterCardProps {
   name: string;
-  price: string;
   image: string;
 }
 
-export default function ScooterCard({ name, price, image }: ScooterCardProps) {
+export default function ScooterCard({ name, image }: ScooterCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-1">
       {/* Image section */}
@@ -17,9 +16,6 @@ export default function ScooterCard({ name, price, image }: ScooterCardProps) {
           fill
           className="object-cover transition-transform duration-300 hover:scale-105"
         />
-        <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold">
-          {price}
-        </div>
       </div>
 
       {/* Content section */}
