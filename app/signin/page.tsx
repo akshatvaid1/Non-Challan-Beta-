@@ -55,8 +55,9 @@ export default function SignInPage() {
       
       router.push('/');
       router.refresh();
-    } catch (err: any) {
-      setErrors(prev => ({ ...prev, general: err.message }));
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Login failed';
+      setErrors(prev => ({ ...prev, general: message }));
     } finally {
       setIsLoading(false);
     }
@@ -126,7 +127,7 @@ export default function SignInPage() {
 
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500 font-medium">
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <Link href="/signup" className="text-blue-600 font-bold hover:underline">
               Sign Up
             </Link>

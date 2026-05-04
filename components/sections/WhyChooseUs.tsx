@@ -1,3 +1,5 @@
+'use client';
+
 import { Zap, MapPin, Activity, Tag, ShieldCheck, MousePointerClick } from 'lucide-react';
 
 const FEATURES = [

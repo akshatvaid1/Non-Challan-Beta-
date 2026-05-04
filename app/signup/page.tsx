@@ -56,8 +56,9 @@ export default function SignUpPage() {
 
       // Success - redirect to signin
       router.push('/signin');
-    } catch (err: any) {
-      setErrors(prev => ({ ...prev, general: err.message }));
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Signup failed';
+      setErrors(prev => ({ ...prev, general: message }));
     } finally {
       setIsLoading(false);
     }
