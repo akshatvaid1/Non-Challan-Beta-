@@ -96,10 +96,10 @@ Please confirm availability.`;
   };
 
   return (
-    <div className="relative z-10 w-full max-w-[1100px] mx-auto p-6 md:p-[24px_28px]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+    <div className="relative z-10 w-full max-w-[1100px] mx-auto p-4 md:p-[24px_28px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-3 md:gap-4">
         {/* Location Dropdown */}
-        <div className="relative h-14">
+        <div className="relative h-14 w-full">
           <div 
             onClick={() => setIsLocOpen(!isLocOpen)}
             className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent hover:border-gray-200 transition-all cursor-pointer h-full"
@@ -125,7 +125,7 @@ Please confirm availability.`;
         </div>
 
         {/* Pickup Date */}
-        <div className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent focus-within:border-gray-200 transition-all h-14">
+        <div className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent focus-within:border-gray-200 transition-all h-14 w-full">
           <Calendar className="h-5 w-5 text-gray-400 shrink-0" />
           <div className="flex flex-col text-left w-full">
             <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Pickup date</label>
@@ -139,7 +139,7 @@ Please confirm availability.`;
         </div>
 
         {/* Pickup Time */}
-        <div className="relative h-14">
+        <div className="relative h-14 w-full">
           <div 
             onClick={() => setIsPickupTimeOpen(!isPickupTimeOpen)}
             className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent hover:border-gray-200 transition-all cursor-pointer h-full"
@@ -165,7 +165,7 @@ Please confirm availability.`;
         </div>
 
         {/* Return Date */}
-        <div className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent focus-within:border-gray-200 transition-all h-14">
+        <div className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent focus-within:border-gray-200 transition-all h-14 w-full">
           <Calendar className="h-5 w-5 text-gray-400 shrink-0" />
           <div className="flex flex-col text-left w-full">
             <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">Return date</label>
@@ -179,7 +179,7 @@ Please confirm availability.`;
         </div>
 
         {/* Return Time */}
-        <div className="relative h-14">
+        <div className="relative h-14 w-full">
           <div 
             onClick={() => setIsReturnTimeOpen(!isReturnTimeOpen)}
             className="flex items-center gap-3 px-4 bg-gray-50 rounded-xl border border-transparent hover:border-gray-200 transition-all cursor-pointer h-full"
@@ -220,11 +220,11 @@ Please confirm availability.`;
         {/* Search Button */}
         <button 
           onClick={handleSearch}
-          className="flex items-center justify-center gap-2 px-7 bg-black text-white text-sm font-black rounded-xl transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] active:scale-[0.97] h-14"
+          className="flex items-center justify-center gap-2 w-full px-7 bg-black text-white text-sm font-black rounded-xl transition-all duration-200 hover:bg-gray-800 hover:scale-[1.02] active:scale-[0.97] h-14"
         >
           <Search className="h-4 w-4" />
-          <span className="lg:hidden xl:inline">Find Rentals</span>
-          <span className="hidden lg:inline xl:hidden">Find</span>
+          <span className="md:hidden lg:inline">Find Rentals</span>
+          <span className="hidden md:inline lg:hidden">Find</span>
         </button>
       </div>
       

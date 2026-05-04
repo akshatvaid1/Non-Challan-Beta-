@@ -35,26 +35,26 @@ const FEATURES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+    <section className="py-16 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 md:px-10">
         {/* Header Section */}
-        <div className="max-w-3xl mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
+        <div className="max-w-3xl mb-12 md:mb-16 text-center md:text-left">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
             Why Students Choose Us
           </h2>
-          <p className="text-lg text-slate-500 leading-relaxed">
+          <p className="text-base md:text-lg text-slate-500 leading-relaxed">
             Fast, reliable rentals designed around your campus life.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {FEATURES.map((feature, index) => (
             <div 
               key={index}
-              className="group p-6 bg-slate-50/50 rounded-[20px] border border-slate-100 shadow-sm hover:shadow-md hover:bg-white hover:-translate-y-1 transition-all duration-300"
+              className="group p-6 bg-slate-50/50 rounded-[20px] border border-slate-100 shadow-sm hover:shadow-md hover:bg-white hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left"
             >
-              <div className="mb-5 p-3 w-fit bg-white rounded-xl border border-slate-100 shadow-sm">
+              <div className="mb-5 p-3 w-fit bg-white rounded-xl border border-slate-100 shadow-sm transition-transform group-hover:scale-110">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">
