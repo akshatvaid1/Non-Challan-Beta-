@@ -9,28 +9,28 @@ const shops = [
     name: "Rental Roadies", 
     location: "Bidholi", 
     status: "Available",
-    logo: "/images/rental-roadies.jpg"
+    logo: "/Images/rental-roadies.jpg"
   },
   { 
     id: 2, 
     name: "Roamers Hub", 
     location: "Pondha", 
     status: "Not Available",
-    logo: "/images/roamers-hub.jpg"
+    logo: "/Images/roamers-hub.jpg"
   },
   { 
     id: 3, 
     name: "Singh Rental", 
     location: "Kandoli", 
     status: "Available",
-    logo: "/images/singh-rental.avif"
+    logo: "/Images/singh-rental.avif"
   },
   { 
     id: 4, 
     name: "Rent and Ride", 
     location: "Bidholi", 
     status: "Available",
-    logo: "/images/rent-and-ride.jpg"
+    logo: "/Images/rent-and-ride.jpg"
   }
 ];
 
